@@ -1,2 +1,4 @@
-<h1>Welcome, today is <%= date_us_to_br(Date.today) %></h1>
+<h3>Welcome, today is <%= date_us_to_br(Date.today) %>,
+  you are on <%= Rails.env %> environment
+</h3>
 <%= link_to "Create Coin", coins_path %>
