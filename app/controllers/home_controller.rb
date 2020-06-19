@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
   def index
-    @name = "Ayrton"
+    @name = params[:name]
   end
 end
