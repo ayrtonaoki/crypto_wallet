@@ -1,4 +1,4 @@
-<h3>Welcome <%= @name %>, today is <%= date_us_to_br(Date.today) %>,
+<h3>Welcome <%= @name.titleize %>, today is <%= date_us_to_br(Date.today) %>,
   you are on <%= Rails.env %> environment
 </h3>
 <%= link_to "Create Coin", coins_path %>
