@@ -1,5 +1,6 @@
 class CoinsController < ApplicationController
   before_action :set_coin, only: [:show, :edit, :update, :destroy]
+  layout 'admin'
 
   # GET /coins
   # GET /coins.json
