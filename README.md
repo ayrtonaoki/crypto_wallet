@@ -1,1 +1,1 @@
-Just a example test project - WIP
+Just a examples and test project - WIP
