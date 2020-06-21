@@ -9,7 +9,7 @@
 Coin.create!(
   description: 'Bitcoin',
   acronym: 'BTC',
-  url_image: 'https://w7.pngwing.com/pngs/450/133/png-transparent-bitcoin-cryptocurrency-virtual-currency-decal-blockchain-info-bitcoin-text-trademark-logo.png'
+  url_image: 'https://pngimg.com/uploads/bitcoin/bitcoin_PNG47.png'
 )
 
 Coin.create!(
