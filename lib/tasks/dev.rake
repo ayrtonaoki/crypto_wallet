@@ -5,11 +5,53 @@ namespace :dev do
       set_setup_task("Dropping database") { %x(rails db:drop) }
       set_setup_task("Creating database") {%x(rails db:create) }
       set_setup_task("Migrating database") { %x(rails db:migrate) }
-      set_setup_task("Seeding database") { %x(rails db:seed) }
+      %x(rails dev:add_coins)
+      %x(rails dev:add_mining_types)
     else
       puts "Task can only be used on development environment"
     end
   end
+
+  desc "Create coins"
+  task add_coins: :environment do
+    set_setup_task("Creating coins") do
+      coins = [
+        {
+          description: 'Bitcoin',
+          acronym: 'BTC',
+          url_image: 'https://pngimg.com/uploads/bitcoin/bitcoin_PNG47.png'
+        },
+        {
+          description: 'Ethereum',
+          acronym: 'ETH',
+          url_image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Ethereum_logo_2014.svg/471px-Ethereum_logo_2014.svg.png'
+        },
+        {
+          description: 'Dash',
+          acronym: 'DASH',
+          url_image: 'https://www.dash.org/wp-content/uploads/dash-d-circle-1000.png'
+        }
+      ]
+      coins.each do |coin|
+        Coin.find_or_create_by!(coin)
+      end
+    end
+  end
+
+  desc "Create mining types"
+  task add_mining_types: :environment do
+    set_setup_task("Creating mining types") do
+      mining_types = [
+        {name: 'Proof of Work', acronym: 'PoW'},
+        {name: 'Proof of Stake', acronym: 'PoS'},
+        {name: 'Proof of Capacity', acronym: 'PoC'}
+      ]
+      mining_types.each do |mining_type|
+        MiningType.find_or_create_by!(mining_type)
+      end
+    end
+  end
+
   private
     def set_setup_task(message)
       spinner = TTY::Spinner.new("[:spinner] #{message}")
