@@ -5,8 +5,8 @@ namespace :dev do
       set_setup_task("Dropping database") { %x(rails db:drop) }
       set_setup_task("Creating database") {%x(rails db:create) }
       set_setup_task("Migrating database") { %x(rails db:migrate) }
-      %x(rails dev:add_coins)
       %x(rails dev:add_mining_types)
+      %x(rails dev:add_coins)
     else
       puts "Task can only be used on development environment"
     end
@@ -19,17 +19,20 @@ namespace :dev do
         {
           description: 'Bitcoin',
           acronym: 'BTC',
-          url_image: 'https://pngimg.com/uploads/bitcoin/bitcoin_PNG47.png'
+          url_image: 'https://pngimg.com/uploads/bitcoin/bitcoin_PNG47.png',
+          mining_type: MiningType.find_by(acronym: 'PoW')
         },
         {
           description: 'Ethereum',
           acronym: 'ETH',
-          url_image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Ethereum_logo_2014.svg/471px-Ethereum_logo_2014.svg.png'
+          url_image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Ethereum_logo_2014.svg/471px-Ethereum_logo_2014.svg.png',
+          mining_type: MiningType.find_by(acronym: 'PoS')
         },
         {
           description: 'Dash',
           acronym: 'DASH',
-          url_image: 'https://www.dash.org/wp-content/uploads/dash-d-circle-1000.png'
+          url_image: 'https://www.dash.org/wp-content/uploads/dash-d-circle-1000.png',
+          mining_type: MiningType.find_by(acronym: 'PoC')
         }
       ]
       coins.each do |coin|
