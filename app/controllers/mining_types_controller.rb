@@ -1,5 +1,6 @@
 class MiningTypesController < ApplicationController
   before_action :set_mining_type, only: [:show, :edit, :update, :destroy]
+  layout 'admin'
 
   # GET /mining_types
   # GET /mining_types.json
