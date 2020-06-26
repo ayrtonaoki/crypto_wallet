@@ -12,16 +12,16 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :description %>
+    <%= form.label t('mining_types_attributes.description') %>
     <%= form.text_field :description %>
   </div>
 
   <div class="field">
-    <%= form.label :acronym %>
+    <%= form.label t('mining_types_attributes.acronym') %>
     <%= form.text_field :acronym %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit t('links.update') %>
   </div>
 <% end %>
