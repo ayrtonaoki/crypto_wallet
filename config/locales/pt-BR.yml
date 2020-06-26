@@ -11,8 +11,8 @@ pt-BR:
   activerecord:
     models:
       coin:
-        one: Moeda
-        other: Moedas
+        one: "Moeda"
+        other: "Moedas"
     attributes:
       coin:
         description: "Nome"
