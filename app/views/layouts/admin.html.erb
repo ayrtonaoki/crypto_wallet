@@ -8,10 +8,10 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-  <h1>ADMIN HEADER</h1>
+  <h1>ADMIN <%= t('header') %></h1>
   <body>
     <%= link_to 'Home', root_path %>
     <%= yield %>
   </body>
-  <h1>ADMIN FOOTER</h1>
+  <h1>ADMIN <%= t('footer') %></h1>
 </html>
