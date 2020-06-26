@@ -1,5 +1,4 @@
-<p><%= t('hello') %></p>
-<strong><p><%=  @name.titleize if @name %></p></strong>
+<p><%= "#{t('hello')} #{@name.titleize if @name}" %></p>
 <p>
   <strong><%= t('today_date') %>:</strong>
   <%= l(Date.today) %>
@@ -7,5 +6,8 @@
 <p>
   <strong><%= t('environment') %>:</strong>
   <%= t(Rails.env) %>
+</p>
+<p>
+  <strong><%= t('actual_locale') %></strong>
 </p>
 <%= render 'menu' %>
