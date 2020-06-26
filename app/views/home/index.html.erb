@@ -1,4 +1,11 @@
-<h3>Welcome <%= @name.titleize if @name %>, today is <%= date_us_to_br(Date.today) %>,
-  you are on <%= Rails.env %> environment
-</h3>
+<p><%= t('hello') %></p>
+<strong><p><%=  @name.titleize if @name %></p></strong>
+<p>
+  <strong><%= t('today_date') %>:</strong>
+  <%= l(Date.today) %>
+</p>
+<p>
+  <strong><%= t('environment') %>:</strong>
+  <%= t(Rails.env) %>
+</p>
 <%= render 'menu' %>
