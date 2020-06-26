@@ -1,12 +1,27 @@
 pt-BR:
-  header: "CABEÇALHO"
-  footer: "RODAPÉ"
   hello: "Olá"
   today_date: "Data"
   environment: "Ambiente"
   development: "Desenvolvimento"
   production: "Produção"
   test: "Teste"
+  activerecord:
+    models:
+      coin:
+        one: Moeda
+        other: Moedas
+    attributes:
+      coin:
+        description: "Nome"
+        acronym: "Sigla"
+        url_image: "URL da imagem"
+        image: "Imagem"
+        mining_type: "Tipo de mineração"
+      mining_type:
+        description: "Nome"
+        acronym: "Sigla"
+  header: "CABEÇALHO"
+  footer: "RODAPÉ"
   links:
     new: "Novo"
     show: "Mostrar"
@@ -15,17 +30,8 @@ pt-BR:
     delete: "Remover"
     back: "Voltar"
   coins: "Moedas"
-  coin_attributes:
-    description: "Nome"
-    acronym: "Sigla"
-    image: "Imagem"
-    mining_type: "Tipo de mineração"
   new_coin: "Nova moeda"
   editing_coin: "Editando moeda"
   mining_types: "Tipos de mineração"
-  mining_types_attributes:
-    description: "Nome"
-    acronym: "Sigla"
-    image: "Imagem"
   new_mining_type: "Novo tipo de mineração"
-  editing_coin: "Editando tipo de mineração"
+  editing_mining_type: "Editando tipo de mineração"
