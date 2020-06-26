@@ -29,6 +29,7 @@ class MiningTypesController < ApplicationController
 
     respond_to do |format|
       if @mining_type.save
+        session[:last_mining_type_created] = @mining_type.description
         format.html { redirect_to @mining_type, notice: 'Mining type was successfully created.' }
         format.json { render :show, status: :created, location: @mining_type }
       else
