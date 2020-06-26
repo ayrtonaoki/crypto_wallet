@@ -6,6 +6,8 @@ pt-BR:
   production: "Produção"
   test: "Teste"
   actual_locale: "Português Brasil"
+  last_coin_created: "Última moeada criada"
+  last_mining_type_created: "Último tipo de mineração criado"
   activerecord:
     models:
       coin:
