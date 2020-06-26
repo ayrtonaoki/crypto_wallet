@@ -12,26 +12,26 @@
   <% end %>
 
   <div class="field">
-    <%= form.label t('coin_attributes.description') %>
+    <%= form.label :description %>
     <%= form.text_field :description %>
   </div>
 
   <div class="field">
-    <%= form.label t('coin_attributes.acronym') %>
+    <%= form.label :acronym %>
     <%= form.text_field :acronym %>
   </div>
 
   <div class="field">
-    <%= form.label t('coin_attributes.image') %>
+    <%= form.label :url_image %>
     <%= form.text_field :url_image %>
   </div>
 
   <div class="field">
-    <%= form.label t('coin_attributes.mining_type') %>
+    <%= form.label :mining_type %>
     <%= form.select('mining_type_id', @mining_types) %>
   </div>
 
   <div class="actions">
-    <%= form.submit t('links.update')%>
+    <%= form.submit %>
   </div>
 <% end %>
