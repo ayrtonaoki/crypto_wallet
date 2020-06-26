@@ -10,4 +10,12 @@
 <p>
   <strong><%= t('actual_locale') %></strong>
 </p>
+<p>
+  <strong><%= t('last_coin_created') %>:</strong>
+  <%= cookies[:last_coin_created] %>
+</p>
+<p>
+  <strong><%= t('last_mining_type_created') %>:</strong>
+  <%= session[:last_mining_type_created] %>
+</p>
 <%= render 'menu' %>
