@@ -5,6 +5,7 @@ pt-BR:
   development: "Desenvolvimento"
   production: "Produção"
   test: "Teste"
+  actual_locale: "Português Brasil"
   activerecord:
     models:
       coin:

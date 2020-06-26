@@ -7,6 +7,7 @@ en:
   development: "Development"
   production: "Production"
   test: "Test"
+  actual_locale: "English US"
   links:
     new: "New"
     show: "Show"
