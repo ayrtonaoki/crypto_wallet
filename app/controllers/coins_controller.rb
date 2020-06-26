@@ -30,6 +30,7 @@ class CoinsController < ApplicationController
 
     respond_to do |format|
       if @coin.save
+        cookies[:last_coin_created] = @coin.description
         format.html { redirect_to @coin, notice: 'Coin was successfully created.' }
         format.json { render :show, status: :created, location: @coin }
       else
