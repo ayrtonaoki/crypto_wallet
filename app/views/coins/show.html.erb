@@ -1,22 +1,22 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong><%= t('coin_attributes.description') %>:</strong>
+  <strong><%= @coin.class.human_attribute_name(:description) %>:</strong>
   <%= @coin.description %>
 </p>
 
 <p>
-  <strong><%= t('coin_attributes.acronym') %>:</strong>
+  <strong><%= @coin.class.human_attribute_name(:acronym) %>:</strong>
   <%= @coin.acronym %>
 </p>
 
 <p>
-  <strong><%= t('coin_attributes.image') %>:</strong>
+  <strong><%= @coin.class.human_attribute_name(:image) %>:</strong>
   <td><%= image_tag @coin.url_image, size:"25x25" %></td>
 </p>
 
 <p>
-  <strong><%= t('coin_attributes.mining_type') %>:</strong>
+  <strong><%= @coin.class.human_attribute_name(:mining_type) %>:</strong>
   <td><%= @coin.mining_type.description %></td>
 </p>
 
