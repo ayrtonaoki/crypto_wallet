@@ -4,3 +4,10 @@ development:
   database: local_db
   username: ayrtonaoki
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: local_db
+  username: ayrtonaoki
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
