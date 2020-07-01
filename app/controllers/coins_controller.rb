@@ -1,7 +1,7 @@
 class CoinsController < ApplicationController
   before_action :set_coin, only: [:show, :edit, :update, :destroy]
   before_action :set_mining_types, only: [:new, :create, :edit, :update]
-  layout 'admin'
+  # layout 'admin'
 
   # GET /coins
   # GET /coins.json
