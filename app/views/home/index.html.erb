@@ -1,18 +1,7 @@
-<p><%= "#{t('hello')} #{@name.titleize if @name}" %></p>
-<p>
-  <strong><%= t('today_date') %>:</strong>
-  <%= l(Date.today) %>
-</p>
-<p>
-  <strong><%= t('environment') %>:</strong>
-  <%= t(Rails.env) %>
-</p>
-<p>
-  <strong><%= t('last_coin_created') %>:</strong>
-  <%= cookies[:last_coin_created] %>
-</p>
-<p>
-  <strong><%= t('last_mining_type_created') %>:</strong>
-  <%= session[:last_mining_type_created] %>
-</p>
-<%= render 'menu' %>
+<div class="jumbotron">
+  <h1 class="display-4">Welcome!</h1>
+  <p class="lead">This is a simple application where you can manage your crypto coins.</p>
+  <hr class="my-4">
+  <p>To start, select:</p>
+  <%= render 'menu' %>
+</div>
