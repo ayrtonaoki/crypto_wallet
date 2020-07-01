@@ -12,13 +12,19 @@
     <%= javascript_include_tag params[:controller], 'data-turbolinks-track': 'reload' %>
   </head>
   <body>
-    <h1><%= t('header') %></h1>
-    <p>with scaffolds.css</p>
-    <h3><%= link_to 'English', root_path(locale: 'en') %></h3>
-    <h3><%= link_to 'Português (Brasil)', root_path(locale: 'pt-BR') %></h3>
-    <%= yield %>
+    <div class='container'>
+      <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <a><%= link_to 'English', root_path(locale: 'en'), class: "nav-link active" %></a>
+        </li>
+        <li class="nav-item">
+          <a><%= link_to 'Português (Brasil)', root_path(locale: 'pt-BR'), class: "nav-link" %></a>
+        </li>
+      </ul>
+      <%= yield %>
 
-    <script>$.notify("Access granted", "success");</script>
+      <script>$.notify("Access granted", "success");</script>
+
+    </div>
   </body>
-  <h1><%= t('footer') %></h1>
 </html>
