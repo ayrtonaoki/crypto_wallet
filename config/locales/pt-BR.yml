@@ -1,12 +1,9 @@
 pt-BR:
-  hello: "Olá"
-  today_date: "Data"
-  environment: "Ambiente"
-  development: "Desenvolvimento"
-  production: "Produção"
-  test: "Teste"
-  last_coin_created: "Última moeada criada"
-  last_mining_type_created: "Último tipo de mineração criado"
+  welcome: "Bem vindo"
+  messages:
+    home:
+      description: "Esta é uma simples aplicação onde você pode gerenciar suas criptomoedas."
+      menu: "Para começar: selecione"
   activerecord:
     models:
       coin:
@@ -22,8 +19,6 @@ pt-BR:
       mining_type:
         description: "Nome"
         acronym: "Sigla"
-  header: "CABEÇALHO"
-  footer: "RODAPÉ"
   links:
     new: "Novo"
     show: "Mostrar"

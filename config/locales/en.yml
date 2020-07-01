@@ -1,7 +1,6 @@
 en:
-  hello: "Hello"
-activerecord:
-  models:
-    coin:
-      one: "Coin"
-      other: "Coins"
+  welcome: "Welcome"
+  messages:
+    home:
+      description: "This is a simple application where you can manage your cryptocoins."
+      menu: "To start, select"
