@@ -4,3 +4,34 @@ en:
     home:
       description: "This is a simple application where you can manage your cryptocoins."
       menu: "To start, select"
+  activerecord:
+    models:
+      coin:
+        one: "Coin"
+        other: "Coins"
+      mining_type:
+        one: "Mining type"
+        other: "Mining types"
+    attributes:
+      coin:
+        description: "Name"
+        acronym: "Acronym"
+        url_image: "URL image"
+        image: "Image"
+        mining_type: "Mining type"
+      mining_type:
+        description: "Name"
+        acronym: "Acronym"
+  links:
+    new: "New"
+    show: "Show"
+    edit: "Edit"
+    update: "Update"
+    delete: "Delete"
+    back: "Back"
+  new:
+    coin: "New Coin"
+    mining_type: "New Mining type"
+  edit:
+    coin: "Edit Coin"
+    mining_type: "Edit Mining type"
