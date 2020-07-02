@@ -1,6 +1,7 @@
 pt-BR:
   welcome: "Bem vindo"
   messages:
+    confirm: "Tem certeza?"
     home:
       description: "Esta é uma simples aplicação onde você pode gerenciar suas criptomoedas."
       menu: "Para começar: selecione"
@@ -9,6 +10,9 @@ pt-BR:
       coin:
         one: "Moeda"
         other: "Moedas"
+      mining_type:
+        one: "Tipo de mineração"
+        other: "Tipos de mineração"
     attributes:
       coin:
         description: "Nome"
@@ -26,9 +30,9 @@ pt-BR:
     update: "Atualizar"
     delete: "Remover"
     back: "Voltar"
-  coins: "Moedas"
-  new_coin: "Nova moeda"
-  editing_coin: "Editando moeda"
-  mining_types: "Tipos de mineração"
-  new_mining_type: "Novo tipo de mineração"
-  editing_mining_type: "Editando tipo de mineração"
+  new:
+    coin: "Nova Moeda"
+    mining_type: "Novo Tipo de mineração"
+  edit:
+    coin: "Editar Moeda"
+    mining_type: "Editar Tipo de mineração"
