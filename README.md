@@ -1,5 +1,5 @@
 ![](https://i.ya-webdesign.com/images/crypto-coin-png-5.png)
-# Tech Store
+# Crypto Wallet
 Project based on Udemy's Rails class where I developed a simple application with basic CRUD features for a crypto coins.
 
 [Click here to check the project](http://my-cryptowallet.herokuapp.com/)
