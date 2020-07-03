@@ -1,4 +1,4 @@
-![](https://www.mobisun.com/wp-content/uploads/2019/01/pay-with-cryptocurrencies-bitcoin-ethereum-ripple-monero-dash-digibite-verge-neo.png)
+![](https://i.ya-webdesign.com/images/crypto-coin-png-5.png)
 # Tech Store
 Project based on Udemy's Rails class where I developed a simple application with basic CRUD features for a crypto coins.
 
